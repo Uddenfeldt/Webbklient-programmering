@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Test Sida</title>
+<script>
+function calc(number1, number2){
+return +number1 + +number2;
+}
+
+function calcbefore(s1, s2){
+var returned = 0;
+var s1 = 0;
+var s2 = 0;
+s1 = document.getElementById('textruta1').value
+s2 = document.getElementById('textruta2').value
+returned = calc(s1, s2);
+alert(returned);
+}
+function message(){
+alert("Hej, hej");
+}
+
+function clock(){
+var time = new Date().getHours();
+var greeting;
+if (time < 10) {
+greeting = "Good Morning";
+}else if (time < 20){
+greeting = "Good Day";
+}else {
+greeting ="Good Evening";
+}
+document.getElementById('greeting').innerText = greeting;
+}
+</script>
+<style>
+.redx{
+color: #ff1111;
+}
+</style>
+</head>
+<body onload="clock()">
+<h1> test sidan title</h1>
+<h1 class="redx" id="greeting"></h1>
+<input type="text" id="textruta1"><br>
+<input type="text" id="textruta2">
+<!--<input type="button" value="click here1" onclick='calcbefore(1,2)'>-->
+<input type="button" value="Click here1" onclick="calcbefore()">
+<input type="button" value="click here" onclick='message()'>
+<input type="button" value="show clock" onclick='clock()'>
+</body>
+</html>

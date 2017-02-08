@@ -1,0 +1,21 @@
+body {
+background: linear-gradient(#ffffff, #333333);
+color: #221100;
+font-size: 24px;
+mix-blend-mode:normal;
+}
+
+.centrum {
+margin: auto;
+text-align: center;
+}
+
+.centrumlist {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		}
+.slogan {
+font: 15px arial, sans, sherif;
+}
+

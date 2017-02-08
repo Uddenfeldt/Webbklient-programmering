@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<title>Ajax</title>
+<script>
+function loadXMLDoc2(){
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function(){
+if(this.readyState == 4 && this.status == 200){
+document.getElementById("demo").innerHTML =
+this.responseText;
+}
+};
+xmlhttp.open("GET","temp/1.txt",True);
+xmlhttp.send();
+};
+
+<!-- <?php -->
+<!-- $input=$_POST["code"] -->
+
+<!-- if($input=='hello'){ -->
+<!-- //Hämtar värdena från formuläret -->
+<!-- $email =$_POST["email"]; -->
+<!-- $mesg =$_POST["message"]; -->
+<!-- $msg =str_replace("\n","<br>",$msg); -->
+<!-- $myfile = fopen("out.txt","a") or die("Unable to open file"); -->
+<!-- $txt=$msg; -->
+<!-- fwrite($myfile,$txt); -->
+<!-- fclose($myfile); -->
+<!-- copy("out.txt","../../temp/1.txt"); -->
+<!-- //skickar den vidare till tacksidan -->
+<!-- header("location:thanks.html"); -->
+
+<!-- }else{ -->
+<!-- echo"<script>"; -->
+<!-- echo"history.back()"; -->
+<!-- echo"</script>"; -->
+<!-- } -->
+<!-- ?> -->
+</script>
+</html>
